@@ -12,6 +12,7 @@ func main() {
 	// gin.Context，封装了request和response
 	r.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, "hello World!")
+		c.String(http.StatusOK, "第二次部署linux测试成功")
 	})
 	// 3.监听端口，默认在8080
 	// Run("里面不指定端口号默认为8080")
